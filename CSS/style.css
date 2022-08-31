@@ -36,13 +36,47 @@ h6 {
 html,
 body {
 	height: 100%;
-	line-height: 1;
 }
 
-/* body {} */
+body {
+	line-height: 1;
+	font-family: Manrope, sans-serif;
+	color: #333333;
+}
 
-/* ------------------- */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
 
-/* .wrapper {} */
+.page {
+	flex: 1 1 auto;
+}
 
-/* ------------------- */
+/* -------------- */
+
+[class*="__container"] {
+	max-width: 1170px;
+	margin: 0px auto;
+}
+
+@media (max-width: 1199.98px) {
+	[class*="__container"] {
+		max-width: 970px;
+	}
+}
+
+@media (max-width: 990.98px) {
+	[class*="__container"] {
+		max-width: 750px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	[class*="__container"] {
+		max-width: none;
+		padding: 0px 15px;
+	}
+}
