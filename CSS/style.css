@@ -87,7 +87,12 @@ body {
 
 /* ----- header ----- */
 
-/* .header {} */
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
 
 .header__container {
 	display: flex;
@@ -143,3 +148,46 @@ body {
 		font-size: 18px;
 	}
 }
+
+
+/* ----- baner ----- */
+
+.page__main {}
+
+.main-block {}
+
+.main-block__container {}
+
+.main-block__body {}
+
+.body-main-block {}
+
+.body-main-block__content {}
+
+.content-main-block {}
+
+.content-main-block__sub-title {}
+
+.content-main-block__title {}
+
+.content-main-block__text {}
+
+.content-main-block__form {}
+
+.form-main-block {}
+
+.form-main-block__input {}
+
+.form-main-block__button {}
+
+.body-main-block__slider {}
+
+.main-block__partners {}
+
+.partners-main-block {}
+
+.partners-main-block__label {}
+
+.partners-main-block__items {}
+
+.partners-main-block__item {}
