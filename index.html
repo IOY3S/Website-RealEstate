@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 	<title>RealEstate</title>
 </head>
 
@@ -40,28 +41,66 @@
 			</div>
 		</header>
 		<main class="page">
-			<!-- baner -->
+			<!-- block_1 -->
 			<section class="page__main main-block">
 				<div class="main-block__container">
 					<div class="main-block__body body-main-block">
 						<div class="body-main-block__content content-main-block">
-							<div class="content-main-block__sub-title">RESIDENTIAL & OFFICE SPACES</div>
-							<h1 class="content-main-block__title">Smart Living Style
-								for Smart People</h1>
-							<div class="content-main-block__text">Much did had call new drew that kept. Limits expect wonder
-								law she. Now has you views woman noisy match money rooms.</div>
-							<form class="content-main-block__form form-main-block" action="#">
-								<input type="text" class="form-main-block__input">
-								<button type="submit" class="form-main-block__button">Search Now!</button>
+							<div class="content-main-block__body">
+								<div class="content-main-block__sup-title">RESIDENTIAL & OFFICE SPACES</div>
+								<h1 class="content-main-block__title">Smart Living Style
+									for Smart People</h1>
+								<div class="content-main-block__text">Much did had call new drew that kept. Limits expect wonder
+									law she. Now has you views woman noisy match money rooms.</div>
+							</div>
+							<form class="content-main-block__form forn-main-block" action="#">
+								<input placeholder="Enter Zipcode to search properties" type="text"
+									class="forn-main-block__input">
+								<button type="submit" class="forn-main-block__button">Search Now!</button>
 							</form>
 						</div>
-						<div class="body-main-block__slider"></div>
+
+						<!-- Slider main container -->
+						<div class="body-main-block__slider slider-main-block swiper">
+							<!-- Additional required wrapper -->
+							<div class="slider-main-block__wrapper swiper-wrapper">
+								<!-- Slides -->
+								<div class="slider-main-block__slide swiper-slide"><img src="./img/main/slider/01.jpeg"
+										alt="Slider Image">
+								</div>
+								<div class="slider-main-block__slide swiper-slide"><img src="./img/main/slider/01.jpeg"
+										alt="Slider Image">
+								</div>
+								<div class="slider-main-block__slide swiper-slide"><img src="./img/main/slider/01.jpeg"
+										alt="Slider Image">
+								</div>
+							</div>
+						</div>
+						<div class="body-main-block__arrows">
+							<div class="body-main-block__arrow swiper-button-prev"></div>
+							<div class="body-main-block__arrow swiper-button-next"></div>
+						</div>
 					</div>
 					<div class="main-block__partners partners-main-block">
 						<div class="partners-main-block__label">Our Amazing Partners</div>
 						<div class="partners-main-block__items">
 							<div class="partners-main-block__item">
-
+								<img src="./img/main/partners/buzz.svg" alt="Company Buzz">
+							</div>
+							<div class="partners-main-block__item">
+								<img src="./img/main/partners/chase.svg" alt="Company Chase">
+							</div>
+							<div class="partners-main-block__item">
+								<img src="./img/main/partners/microsoft.svg" alt="Company Microsoft">
+							</div>
+							<div class="partners-main-block__item">
+								<img src="./img/main/partners/gucc.svg" alt="Company Gucc">
+							</div>
+							<div class="partners-main-block__item">
+								<img src="./img/main/partners/airbnb.svg" alt="Company Airbnb">
+							</div>
+							<div class="partners-main-block__item">
+								<img src="./img/main/partners/uber.svg" alt="Company Uber">
 							</div>
 						</div>
 					</div>
@@ -70,6 +109,8 @@
 		</main>
 		<footer class="footer"></footer>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
